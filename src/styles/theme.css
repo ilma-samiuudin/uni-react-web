@@ -2,42 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  font-family: system-ui, -apple-system, sans-serif;
-  background-color: #ffffff;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f5f9; 
-}
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1; 
-  border-radius: 20px;
-  border: 2px solid #f1f5f9; 
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8; 
-}
-
-.premium-glow-button {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.premium-glow-button:hover {
-  box-shadow: 0 12px 30px -5px rgba(29, 78, 216, 0.35);
-  transform: translateY(-2px);
-}
-
 :root {
-  --primary-navy: #0f172a;     
-  --brand-blue: #1d4ed8;         
-  --accent-gold: #b45309;       
-  --slate-light: #f8fafc;        
+  --brand-espresso: #56483a;
+  --warm-sand: #f2e8d5;
 }
 
 html {
@@ -46,6 +13,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--warm-sand);
 }
 
 ::-webkit-scrollbar {
@@ -53,71 +21,15 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9; 
+  background: var(--warm-sand);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #d8c9ad;
   border-radius: 20px;
-  border: 2px solid #f1f5f9; 
+  border: 2px solid var(--warm-sand);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8; 
-}
-
-.premium-glow-button {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.premium-glow-button:hover {
-  box-shadow: 0 12px 30px -5px rgba(29, 78, 216, 0.35);
-  transform: translateY(-2px);
-}
-
-.academic-card-mesh {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background: #ffffff;
-  position: relative;
-}
-
-.academic-card-mesh:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08);
-}
-
-.university-input-vector {
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.university-input-vector:focus {
-  border-color: var(--brand-blue);
-  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.1);
-}
-
-.glass-header-axis {
-  background-color: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.mock-image-placeholder {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.mock-image-placeholder::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent);
-  transform: translateX(-100%);
-  animation: loading-shimmer 2.5s infinite;
-}
-
-@keyframes loading-shimmer {
-  100% {
-    transform: translateX(100%);
-  }
+  background: var(--brand-espresso);
 }
