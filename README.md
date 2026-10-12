@@ -4,7 +4,7 @@ A professional Frontend project built with React, Vite, and Tailwind CSS.
 University website is fully responsive, modern, Educational landing page  designed for universities.
 
 ## Live Demo
-You can view my live portfolio here: https://personal-portfolio-react-phi-gules.vercel.app/
+You can view my live portfolio here: https://uni-react-web.vercel.app/
 
 # Features & Tech Stack
 * ReactJS - Component-based structure for smooth perfomance
